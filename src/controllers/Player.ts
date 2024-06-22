@@ -16,8 +16,6 @@ export class PlayerController {
 
   post = async (req: Request, res: Response) => {
     const { name, imageUrl, position, age } = req.body;
-    console.log(req.body);
-
     const newP = new Player();
     newP.name = name;
     newP.age = age;
